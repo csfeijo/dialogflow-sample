@@ -1,0 +1,38 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "helpers/debug.js",
+        ]
+      }
+    ],
+    "linebreak-style": 0,
+    "max-len": "off",
+    "no-console": 0,
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "body"
+        ]
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "re[qs]"
+      }
+    ]
+  }
+}
